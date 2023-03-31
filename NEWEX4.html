@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration Page
+    </title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="formdiv">
+        <form name="forms" action="" onsubmit="return validation()">
+
+            <label> Firstname </label>
+            <input type="text" name="firstname" size="20" id="name"> <br> <br>
+            <label> Middlename: </label>
+            <input type="text" name="middlename" size="20"> <br> <br>
+            <label> Lastname: </label>
+            <input type="text" name="lastname" size="20"> <br> <br>
+
+            <label>
+                Course :
+            </label>
+            <select>
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="B.E">B.E</B></option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+
+            <br>
+            <br>
+            <label>
+                Gender :
+            </label><br>
+            <input type="radio" name="male" id="n"> Male <br>
+            <input type="radio" name="male" id="n"> Female <br>
+            <input type="radio" name="male" id="n"> Other
+            <br>
+            <br>
+
+            <label>
+                Phone :
+            </label>
+            <input type="text" name="country code" value="+91" size="2" />
+            <input type="text" name="phone" size="10" /> <br> <br>
+            Address
+            <br>
+            <textarea cols="70" rows="5" value="address">
+        </textarea>
+            <br> <br>
+            Email:
+            <input type="email" id="email" name="email" /> <br>
+            <br> <br>
+            Password:
+            <input type="Password" id="pass" name="pass"> <br>
+            <br> <br>
+            Re-type password:
+            <input type="Password" id="repass" name="repass"> <br> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        function validation() {
+            let uname = document.formdiv["forms"]["firstname"];
+            let pno=document.formdiv["forms"]["phone"];
+            let pass=document.formdiv["forms"]["pass"];
+
+            if(uname.value==""){
+                alert("Please enter the name");
+                uname.focus();
+                return false;
+            }
+            if(pno.value==""){
+                alert("Please enter the name");
+                uname.focus();
+                return false;
+            }
+            if(pass.value==""){
+                alert("Please enter the name");
+                uname.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

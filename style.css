@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 10px; */
+    flex-direction: column;
+}
+
+.container>div {
+    width: 300px;
+}
+
+.disp {
+    display: flex;
+    flex-direction: row;
+}
+.disp > input {
+    margin: 2px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid > input {
+    margin: 2px;
+}
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+input {
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
